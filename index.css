@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Libre Baskerville", serif;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --color-warm-bg: #f5f5f0;
+  --color-warm-accent: #5A5A40;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-warm-bg);
+  color: #1a1a1a;
+}
+
+.serif {
+  font-family: var(--font-serif);
+}
+
+.olive-button {
+  background-color: var(--color-warm-accent);
+  color: white;
+  border-radius: 9999px;
+  padding: 12px 24px;
+  letter-spacing: 0.5px;
+  transition: opacity 0.2s ease;
+}
+
+.olive-button:hover {
+  opacity: 0.9;
+}
+
+.card {
+  background-color: #FFFFFF;
+  border-radius: 32px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.nav-link {
+  font-family: var(--font-serif);
+  font-style: italic;
+  text-decoration: none;
+  color: #1a1a1a;
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
+}
+
+.nav-link:hover, .nav-link.active {
+  opacity: 1;
+  text-decoration: underline;
+  text-underline-offset: 8px;
+}
